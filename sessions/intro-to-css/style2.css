@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.wrapper{
+    background-color: aquamarine;
+    padding: 20px;
+}
+.wrapper div{
+    float: left;
+    background-color: antiquewhite;
+    padding: 20px;
+    border: 1px solid black;
+    margin: 20px;
+
+}
+.two
+{
+    background-color: blueviolet;
+}
+.three
+{background-color: chartreuse;}
+.four
+{background-color: palevioletred;}
+.wrapper div: :hover{
+    background-color: black
+    color: white
+}
