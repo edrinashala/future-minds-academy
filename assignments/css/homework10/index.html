@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paragraph Hover</title>
+  <style>
+    .hover-effect {
+      font-size: 15px;
+      padding: 10px;
+      transition: background-color 0.3s ease, font-size 0.3s ease; 
+    }
+    .hover-effect:hover {
+      background-color: gray;
+    }
+
+    .hover-effect::first-letter {
+      font-size: 15px; 
+      font-weight: bold; 
+    }
+  </style>
+</head>
+<body>
+  <p class="hover-effect">This is a paragraph. Hover over it to see the effect!</p>
+</body>
+</html>

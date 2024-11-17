@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylized Typography</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: white; 
+            color: rgb(60, 60, 60); 
+            margin: 20px;
+            line-height: 1.3;
+        }
+
+       
+        .wrapper {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: whitesmoke; 
+            border: 1px solid white; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+       
+        .stylep {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        
+        .upper{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 100px;
+            color: black;
+            margin-right: 10px;
+            line-height: 1;
+            position: relative;
+            top: -10px;
+            width: 100px;
+        }
+
+        .upper::after {
+            content: "";
+            display: block;
+            width: 50%;
+            height: 5px;
+            background-color: rgb(180, 2, 2); 
+            position: absolute;
+            bottom: -5px;
+            left: 5px;
+        }
+
+    
+        .text {
+            font-size: 17px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="stylep">
+            <span class="upper">L</span>
+            <span class="text">
+                <strong>OREM</strong> ipsum dolor, sit amet consectetur adipisicing elit. Esse voluptatum voluptates numquam magnam nemo molestiae officia repellendus provident. Animi culpa adipisci atque nam recusandae eos eum odit ducimus fugit deserunt!
+            </span>
+        </div>
+    </div>
+</body>
+</html>

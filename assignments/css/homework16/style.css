@@ -1,0 +1,114 @@
+/* External stylesheet: style.css */
+
+/* Set the background image for the body */
+body {
+    background: url('path_to_your_background_image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    cursor: url('path_to_your_custom_cursor_image.cur'), auto;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the header section */
+header {
+    background-color: yellow;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+
+/* Hover effects for links and sections */
+nav ul li a:hover,
+section:hover {
+    border: 3px solid darkgray;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Style for sections */
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+/* Style for the figure element in the about section */
+#about figure {
+    text-align: center;
+}
+
+#about img {
+    border: 2px solid black;
+}
+
+/* Style for the table in the skills section */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style for the projects links */
+#projects a {
+    position: relative;
+    top: -5px;
+    text-decoration: none;
+    color: blue;
+}
+
+#projects a:hover {
+    border: 3px solid darkgray;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+}
+
+/* Additional styles for specific sections */
+#education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#education li {
+    margin-bottom: 10px;
+}
+
+#education .category {
+    font-weight: bold;
+}

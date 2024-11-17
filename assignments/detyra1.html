@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model and Positioning Example</title>
+    <style>
+        body {
+            background-color: peachpuff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 300px;
+            padding: 20px;
+            border: 2px solid green;
+            background-color: blue;
+            color: white;
+            margin: 10px auto; /* Center the boxes horizontally */
+            position: relative;
+        }
+        .box h2 {
+            position: relative;
+            top: -10px;
+        }
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .video {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            width: 300px;
+            height: 200px;
+            background: url('https://placekitten.com/300/200') no-repeat center center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button class="close-button">X</button>
+        <h2>Neil Armstrong</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Exercitationem, harum!</p>
+    </div>
+    <div class="box">
+        <button class="close-button">X</button>
+        <h2>Buzz Aldrin</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Exercitationem, harum!</p>
+    </div>
+    <div class="box">
+        <button class="close-button">X</button>
+        <h2>Neil Armstrong</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Exercitationem, harum!</p>
+    </div>
+    <div class="box">
+        <button class="close-button">X</button>
+        <h2>Neil Armstrong</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Exercitationem, harum!</p>
+    </div>
+    <div class="video" title="The rotating earth">
+        <!-- Video content here -->
+    </div>
+</body>
+</html>

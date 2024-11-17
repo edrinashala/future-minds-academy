@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpage Layout</title>
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    section {
+      height: 200px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    section:nth-child(odd) {
+      background-color: beige; 
+    }
+    section:nth-child(even) {
+      background-color: rgb(57, 57, 57); 
+      color: white;
+    }
+
+    h1 {
+      font-size: 30px; 
+      margin: 0;
+    }
+
+    p {
+      font-size: 20px; 
+      text-align: center;
+    }
+
+    hr {
+      width: 33%; 
+      border: 1px solid red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>William Shakespeare</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iste est suscipit nisi deserunt repudiandae fuga perferendis.</p>
+    <hr>
+  </section>
+  <section>
+    <h1>Elliott Smith</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iste est suscipit nisi deserunt repudiandae fuga perferendis.</p>
+    <hr>
+  </section>
+  <section>
+    <h1>Fyodor Dostoevsky</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iste est suscipit nisi deserunt repudiandae fuga perferendis.</p>
+    <hr>
+  </section>
+  <section>
+    <h1>Kendrick Lamar</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis iste est suscipit nisi deserunt repudiandae fuga perferendis.</p>
+    <hr>
+  </section>
+</body>
+</html>

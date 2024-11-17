@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+ background-color: rgb(186, 138, 231);
+margin: 2em;
+
+}
+img{
+    width: 20vw;
+    height: 30vh;
+    padding: 4em;
+    background-color: rgb(147, 73, 216);
+    margin: 3em;
+    border: 0.5em double rgb(65, 65, 142);
+    border-radius: 5%;
+    padding: 2em 3em;
+    position: relative;
+    left: 35%; 
+    top: 15em;
+}
