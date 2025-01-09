@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Conditioner</title>
+    <style>
+        .wrapper {
+            position: relative;
+            width: 400px;
+        }
+        h1 {
+            position: absolute;
+            left: 175px;
+            top: 68px;
+            z-index: 2;
+            text-align: center;
+        }
+        .ac {
+            z-index: 1;
+        }
+        select {
+            width: 50px;
+            padding: 5px;
+            position: absolute;
+            top: 175px;
+            left: 170px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1 id="temp">OFF</h1>
+        <img class="ac" src="ac.jpeg" width="400" alt=""><br>
+        <select name="" id="tempSelect"></select>
+    </div>
+
+    <script>
+        const temp = document.querySelector('#temp');
+        const tempSelect = document.querySelector('#tempSelect');
+        
+        for(let i=0; i<=30; i++){
+            tempSelect.innerHTML += `
+                <option value="${i}">${i}</option>
+            `;
+        }
+
+        tempSelect.addEventListener('change', function (e){
+            temp.textContent = e.target.value;
+        });
+
+        console.log('hello');
+
+    </script>
+</body>
+
+</html>

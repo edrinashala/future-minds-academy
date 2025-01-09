@@ -1,0 +1,43 @@
+@keyframes animations{
+0%{
+    background-color: aquamarine;
+    color: white;
+}
+40%{
+    background-color:rgb(33, 94, 73) ;
+    color: rgb(244, 219, 219);
+}
+100%{
+    background-color: rgb(32, 52, 46);
+    color: rgb(214, 206, 206);
+}
+}
+
+ 
+h2:hover{
+    background-color: bisque;
+    color: aqua;
+}
+h2{
+    padding: 2em 3em;
+    background-color: darkgreen;
+    color: beige;
+    display: inline-block;
+    border-radius: 3em;
+
+    transition-property: background-color, color ;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
+    transition-delay: 2s;
+    animation-name: animations;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+@media(max-width: 800px){
+    body{
+       display: flex;
+       flex-direction: row;
+
+    }
+}

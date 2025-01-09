@@ -1,30 +1,40 @@
-/* External stylesheet: style.css */
 
-/* Set the background image for the body */
 body {
-    background: url('path_to_your_background_image.jpg') no-repeat center center fixed;
-    background-size: cover;
+    
     font-family: Arial, sans-serif;
-    cursor: url('path_to_your_custom_cursor_image.cur'), auto;
+    cursor: url('9027436_cursor_icon.png') ;
     margin: 0;
     padding: 0;
+    background-image: url(maroonbg.jpeg);
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+hr{
+    margin-left: 300px;
+    margin-right: 300px;
 }
 
-/* Style for the header section */
 header {
-    background-color: yellow;
     padding: 20px;
     text-align: center;
-    border-bottom: 2px solid black;
+    border-radius: 10px;
 }
-
 header h1 {
     margin: 0;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+}
+ul{
+    list-style: none;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+
+    
 }
 
 nav ul li {
@@ -33,27 +43,32 @@ nav ul li {
 }
 
 nav ul li a {
+    margin: 10px;
+    background-color: rgb(131, 38, 53) ;
+    transition: 0.8s;
     text-decoration: none;
     color: black;
     padding: 5px 10px;
 }
 
-/* Hover effects for links and sections */
+
 nav ul li a:hover,
 section:hover {
     border: 3px solid darkgray;
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(131, 34, 58, 0.545);
+
 }
 
-/* Style for sections */
+
 section {
     padding: 20px;
-    margin: 10px;
-    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
     border: 1px solid #ccc;
+    color: white;
+    background-color: rgb(137, 41, 62);
 }
 
-/* Style for the figure element in the about section */
 #about figure {
     text-align: center;
 }
@@ -61,12 +76,21 @@ section {
 #about img {
     border: 2px solid black;
 }
+#skills{
 
-/* Style for the table in the skills section */
+}
+
 table {
     border-collapse: collapse;
     width: 100%;
     margin-bottom: 20px;
+    text-align: center;
+    height: 180px;
+    left: 300px;
+    transition: 0.8s;
+}
+table th{
+    background-color: rgb(101, 26, 38);
 }
 
 table, th, td {
@@ -78,12 +102,12 @@ th, td {
     text-align: center;
 }
 
-/* Style for the projects links */
+
 #projects a {
     position: relative;
     top: -5px;
     text-decoration: none;
-    color: blue;
+    color: rgb(16, 16, 64);
 }
 
 #projects a:hover {
@@ -91,15 +115,19 @@ th, td {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Style for the footer */
+
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #f1f1f1;
-    border-top: 1px solid #ccc;
+    background-color: rgb(74, 74, 74);
+    border-top: 1px solid white;
+
+}
+footer p{
+    position: relative;
+    top: 20px;
 }
 
-/* Additional styles for specific sections */
 #education ul {
     list-style-type: none;
     padding: 0;
@@ -107,6 +135,11 @@ footer {
 
 #education li {
     margin-bottom: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    position: relative;
+    right: 20px;
+
 }
 
 #education .category {
