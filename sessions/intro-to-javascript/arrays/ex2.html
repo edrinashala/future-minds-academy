@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My favorite movies</title>
+</head>
+<body>
+    <ul class="listMovies"></ul>
+    <script>
+        let allMovies = [
+            {
+                name: "Training Day",
+                year: "2001"
+            },
+            {
+                name: "Gladiator II",
+                year: "2024"
+            },
+            {
+                name: "Lord of Rings",
+                year: "2016"
+            }
+        ];
+
+        const listMovies = document.querySelector('.listMovies');
+
+        for(let i=0; i<allMovies.length; i++){
+            listMovies.innerHTML +=`
+                <li>
+                    <b>${allMovies[i].name}</b>
+                    <i>${allMovies[i].year}</i>
+                </li>
+            `;
+        }
+    </script>
+</body>
+</html>

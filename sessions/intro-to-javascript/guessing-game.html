@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing game</title>
+</head>
+<body>
+    
+    <script>
+        let pcNum = Math.floor(Math.random()*10) +1;
+        console.log(pcNum);
+
+        let userNum = prompt("Guess a number betweeen (1-10): ");
+        if(userNum < pcNum){
+            userNum = prompt("Guess higher: ");
+        }
+        if(userNum > pcNum){
+            userNum = prompt("Guess lower: ");
+        }
+        if(userNum == pcNum){
+           console.log("Congruatulations!")
+        }
+        if(userNum != pcNum){
+            console.log("You lose!");
+        }
+    </script>
+</body>
+</html>
