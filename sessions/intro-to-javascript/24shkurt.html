@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide show div</title>
+    <style>
+        button{
+            background-color: blue; 
+            padding: 10px 20px;
+            border-radius: 10px;
+            color: white;
+        }
+        .questions{
+            display: none;
+            width: 500px;
+            background-color: antiquewhite;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            visibility: hidden;
+        }
+        .activeQuestion{visibility: visible;}
+    </style>
+</head>
+<body>
+    <button id="startQuiz">Start Quiz</button>
+
+    <divc class="questions">
+        <h2>Question goes here</h2>
+        <ol type="a">
+            <li>Answer 1</li>
+            <li>Answer 2</li>
+            <li>Answer 3</li>
+        </ol>
+
+        <button id="exitQuiz">Exit</button>
+        <button>Next</button>
+    </div>
+
+    <script>
+       const startQuiz =document.querySelector('#startQuiz');
+       const exitQuiz =document.querySelector('#exitQuiz');
+       const questions =document.querySelector('.questions');
+
+       startQuiz.addEventListener('click' , ()=> (
+
+           questions.classList.add('activeQuestion');
+
+       ));
+       startQuiz.addEventListener('click' , ()=> (
+
+           questions.classList.remove('activeQuestion');
+
+       ));
+    </script>
+</body>
+</html>
+

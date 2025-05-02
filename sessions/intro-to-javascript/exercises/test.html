@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wallet</title>
+    <link rel="stylesheet" href="assets/css/my_wallet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="search"> 
+            <img src="assets/img/search (1).png" alt="">
+         <input type="text" class="search-bar"  placeholder="Search here...">
+        </nav>
+        <section class="header-right">
+            <div class="weather">
+                <div><img src="assets/img/ic_weather.png" alt="">
+                    <p style="color: white;"><b>21°</b></p>
+                </div>
+                <h4>Medan, IDN</h4>
+            </div>
+            <div class="notify">
+                <div class="bell">
+                    <span class="notify-num twelve">12</span>
+                <img src="assets/img/Group.png" alt="">
+                </div>
+                <div class="message">
+                    <span class="notify-num five">5</span>
+                <img src="assets/img/Group (1).png" alt="">
+                </div>
+                
+                
+            </div>
+            <div class="text">
+                <p>Hello, <b>Franklin</b></p>
+                <p class="super">Super Admin</p>
+            </div>
+            <div class="circle"></div>
+            <div class="settings">
+                <span class="notify-warn">!</span>
+                <img src="assets/img/ic_setting.png" alt="">
+            </div>
+
+        </section>
+    </header>
+
+    <aside class="aside">
+        <figure class="logo">
+            <img src="assets/img/M.png" alt="">
+            <article>
+                <h1>MOPHY</h1>
+                <p>Payment Admin</p>
+            </article>
+        </figure>
+        <ul class="list">
+            <li class="dashboard li" tabindex="0">
+                <div class="imgwrapper" >
+                    <img class="image" src="assets/img/Vector (7).png" tabindex="0" alt="">
+                </div>
+                <p class="p">Dashboard</p>
+            </li>
+            <li class="wallet li" tabindex="0">
+             <div class="imgwrapper">
+                   <img src="assets/img/Vector (2).png" alt=""> 
+                </div>
+                <p class="p">My Wallet</p>
+            </li>
+            <li class="transaction li" tabindex="0">
+                <div class="imgwrapper">
+                   <img src="assets/img/Vector (3).png" alt=""> 
+                </div>
+                <p class="p">Transactions</p>
+            </li>
+            <li class="invoice li" tabindex="0">
+                <div class="imgwrapper">
+                   <img src="assets/img/Vector (4).png" alt=""> 
+                </div>
+                <p class="p">Invoices</p>
+            </li>
+            <li class="card li" tabindex="0">
+                <div class="imgwrapper">
+                    <img src="assets/img/Vector (5).png" alt="">
+                </div>
+                <p class="p">Cards</p>
+            </li>
+            <li class="setting li" tabindex="0">
+                <div class="imgwrapper">
+                    <img src="assets/img/Vector (6).png" alt="">
+                </div>
+                <p class="p">Settings</p>
+            </li>
+        </ul>
+
+        <article class="article">
+            <span class="footer">
+               <h4>Mophy Payment Admin Dashboard</h4>
+               <p>&#169; 2025 All Rights Reserved</p> 
+            </span>
+            <p>
+                Made with &#129293; by Peterdraw
+            </p>
+        </article>
+    </aside>
+
+
+    <main class="wallet-container">
+        <h2>My Wallet</h2>
+        
+    
+        <section class="balance-section">
+            <div class="balance-card">
+                <img class="wallet-pic" src="assets/img/wallet.png" alt="">
+                <h3>Main Balance</h3>
+                <p class="balance-amount">$673,412.66</p>
+                <p class="validity">VALID THRU</p>
+                <p class="date">08/21</p>
+                <p class="card-holder">CARD HOLDER</p>
+                <p class="name-client">Franklin Jr.</p>
+                <p class="card-info">**** **** **** 1234</p>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+        
+            <div class="balance-details">
+                <div class="balance-item" id="installment">
+                    <img class="percentage" src="assets/img/icon.png" alt="">
+                    <p class="mainbalance-text">Installment</p>
+                    <h4 class="mainbalance-num">$5,412</h4>
+                </div>
+                <div class="balance-item" id="investment">
+                    <img class="percentage" src="assets/img/icon (2).png" alt="">
+                    <p class="mainbalance-text">Investment</p>
+                    <h4 class="mainbalance-num">$3,784</h4>
+                </div>
+                <div class="balance-item" id="property">
+                    <img class="percentage" src="assets/img/icon (3).png" alt="">
+                    <p class="mainbalance-text" id="property-text">Property</p>
+                    <h4 class="mainbalance-num">$3,784</h4>
+                </div>
+                <div class="new-spends">
+                    <h4 class="mbalance-text">+New Spends</h4>
+                </div>
+            </div>
+
+
+        </section>
+
+    
+        <section class="actions">
+            <button class="btn transfer">
+                <div class="circle-two">
+                  <img class="blue-c" src="assets/img/Vector (1).png" alt="">
+                  <img class="blue-arrow" src="assets/img/arrow.png" alt="">
+               </div>
+                <p class="text-two">Transfer</p>
+            </button>
+            <button class="btn invoices">
+                <div class="circle-three">
+                    <img  class="inv-green" src="assets/img/ic_invoices.png" alt="">
+                </div>
+                <p class="text-inv">Send Invoices</p>
+            </button>
+        </section>
+        <div class="container">
+            <h2>Invoices Sent</h2>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur</p>
+    
+            <div class="invoice-list">
+                <div class="invoice-item">
+                    <div class="profile-pic"></div>
+                    <div class="info">
+                        <p class="name">FSoziety</p>
+                        <p class="time">4h ago</p>
+                    </div>
+                    <p class="amount">$45</p>
+                </div>
+    
+                <div class="invoice-item">
+                    <div class="profile-pic"></div>
+                    <div class="info">
+                        <p class="name">David Ignis</p>
+                        <p class="time">7h ago</p>
+                    </div>
+                    <p class="amount">$672</p>
+                </div>
+                <div class="invoice-item">
+                    <div class="profile-pic"></div>
+                    <div class="info">
+                        <p class="name">Olivia Johan...</p>
+                        <p class="time">4h ago</p>
+                    </div>
+                    <p class="amount">$769</p>
+                </div>
+    
+                <div class="invoice-item">
+                    <div class="profile-pic"></div>
+                    <div class="info">
+                        <p class="name">Stevan Store</p>
+                        <p class="time">4h ago</p>
+                    </div>
+                    <p class="amount">$562</p>
+                </div>
+    
+                <div class="invoice-item">
+                    <div class="profile-pic"></div>
+                    <div class="info">
+                        <p class="name">Kidz Zoo</p>
+                        <p class="time">4h ago</p>
+                    </div>
+                    <p class="amount">$776</p>
+                </div>
+            </div>
+        </div>
+        <div class="round">
+            <img src="assets/img/arrowdown.png" alt="">
+          </div>
+<div class="payment-history">
+    <h2>Payment History</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At aut ad quisquam voluptate vel? Quisquam sit dolores id similique doloremque voluptas magni, quo inventore quasi nam tenetur impedit nemo corporis!</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Recipient</th>
+                <th>Date</th>
+                <th>Amount</th>
+                <th>Payment Method</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="clickable">
+                <td>XYZ Store ID</td>
+                <td>June 1, 2020, 08:22 AM</td>
+                <td>+5,553</td>
+                <td>MasterCard 404</td>
+                <td class="completed">Completed</td>
+            </tr>
+            <tr class="clickable">
+                <td>Andrew Lee</td>
+                <td>June 3, 2020, 08:22 AM</td>
+                <td>+5,553</td>
+                <td>MasterCard 404</td>
+                <td class="canceled">Canceled</td>
+            </tr>
+            <tr class="clickable">
+                <td>Olivia Brownlee</td>
+                <td>June 4, 2020, 08:22 AM</td>
+                <td>+5,553</td>
+                <td>MasterCard 404</td>
+                <td class="completed">Completed</td>
+            </tr>
+            
+            <tr class="clickable">
+                <td>Popo Store</td>
+                <td>June 5, 2020, 08:22 AM</td>
+                <td>+5,553</td>
+                <td>MasterCard 404</td>
+                <td class="pending">Pending</td>
+            </tr>
+            <tr class="clickable">
+                <td>Peter Parker</td>
+                <td>June 10, 2020, 08:22 AM</td>
+                <td>+5,553</td>
+                <td>MasterCard 404</td>
+                <td class="pending">Pending</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+    
+       
+    </main>
+
+</body>
+</html>

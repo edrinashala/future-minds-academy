@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights on and off</title>
+    <style>
+        button {
+            background-color: transparent;
+            border-radius: 10px;
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid black;
+        }
+        .wrapper {
+            margin: 10px;
+            margin-top: 20px;
+            background-color: antiquewhite;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+        .dark-mode button {
+            background-color: black;
+            color: white;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+<body>
+    Lights: 
+    <button class="light-on">on</button> 
+    <button class="light-off">off</button>
+
+    <div class="wrapper">
+        <h2>Welcome to Gjilan!</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam veniam soluta non minus? Repellat dolores at asperiores, nihil similique et labore quis nesciunt laborum veritatis, sint ipsam adipisci non ipsa?</p>
+        <button>Learn more</button>
+    </div>
+
+    <script>
+        const wrapper = document.querySelector(".wrapper");
+        const lightOn = document.querySelector(".light-on");
+        const lightOff = document.querySelector(".light-off");
+
+        lightOff.style.display = "none";
+
+        lightOn.addEventListener("click", () => {
+            if (!wrapper.classList.contains("dark-mode")) {
+                wrapper.classList.add("dark-mode");
+                lightOn.style.display = "none";
+                lightOff.style.display = "inline-block";
+            }
+        });
+
+        lightOff.addEventListener("click", () => {
+            if (wrapper.classList.contains("dark-mode")) {
+                wrapper.classList.remove("dark-mode");
+                lightOff.style.display = "none";
+                lightOn.style.display = "inline-block";
+            }
+        });
+    </script>
+</body>
+</html>

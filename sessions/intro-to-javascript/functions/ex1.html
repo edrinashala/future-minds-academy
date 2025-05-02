@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasons</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        LOGO
+    </div>
+    <nav>
+        <ul>
+            <li onclick="loadSeason(0)">Spring</li>
+            <li onclick="loadSeason(1)">Summer</li>
+            <li onclick="loadSeason(2)">Autumn</li>
+            <li onclick="loadSeason(3)">Winter</li>
+        </ul>
+    </nav>
+    <main>
+        <h2 id="title">Spring</h2>
+        <div id="photo">
+            <img src="img/spring.png" alt="">
+        </div>
+        <h3 id="description">Spring in Florida</h3>
+    </main>
+
+    <script>
+        let data = [
+            {
+                title: "Spring",
+                hero: "spring.png",
+                desc: "Spring in Florida"
+            },
+            {
+                title: "Summer",
+                hero: "summer.png",
+                desc: "Summer in Kosova"
+            },
+            {
+                title: "Autumn",
+                hero: "autumn.png",
+                desc: "Autumn in Japan"
+            },
+            {
+                title: "Winter",
+                hero: "winter.png",
+                desc: "Winter in Alaska"
+            }
+        ]
+        
+        const title = document.querySelector('#title');
+        const photo = document.querySelector('#photo');
+        const desc = document.querySelector('#description');
+        function loadSeason(s){
+            title.textContent = data[s].title;
+            photo.innerHTML = `
+            <img src="img/${data[s].hero}" alt="">  `
+            desc.textContent = data[s].desc;
+        }
+        
+    </script>
+</body>
+</html>

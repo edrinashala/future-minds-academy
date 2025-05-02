@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights on and off</title>
+    <style>
+        button { 
+            background: transparent; 
+            border-radius: 10px; 
+            padding: 10px; 
+            cursor: pointer;
+        }
+        .wrapper {
+            margin-top: 20px;
+            background-color: antiquewhite;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .active {
+            background-color: black;
+            color: white;
+        }
+        .activeBTN {
+            background-color: aliceblue;
+            color: black;
+        }
+        .activeOn{ background-color: black; color: white; }
+    </style>
+</head>
+<body>
+    Lights: <button id="onoffBTN" class="onOffStyle">On</button>
+    <div class="wrapper">
+        <h2>Welcome to Gjilani</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid maxime cum neque, dolorum qui quas amet facere placeat velit, illum perferendis consequuntur dicta iste, officiis magnam. Quaerat illo nesciunt ad.</p>
+        <button class="learnMore">Learn more</button>
+    </div>
+
+    <script>
+        const onoffBTN = document.querySelector('#onoffBTN');
+        const wrapper = document.querySelector('.wrapper');
+        const learnMore = document.querySelector('.learnMore');
+        const onOffStyle = document.querySelector('.onOffStyle');
+        let onoffStat = false;
+
+        onoffBTN.addEventListener('click', ()=>{
+            if(!onoffStat){
+                wrapper.classList.add('active');
+                learnMore.classList.add('activeBTN');
+                onOffStyle.classList.add('activeOn');
+                onoffBTN.textContent = "Off";
+                onoffStat = true;
+            }
+            else {
+                wrapper.classList.remove('active');
+                learnMore.classList.remove('activeBTN');
+                onOffStyle.classList.remove('activeOn');
+                onoffBTN.textContent = "On";
+                onoffStat = false;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create HTML</title>
+</head>
+<body>
+    <input type="text" name="movieName" id="movieName" placeholder="Movie Name"> 
+    <input type="number" name="year" id="year" placeholder="Year"> 
+    <button id="addBTN">Add</button>
+
+    <ul class="listMovie">
+        <li>
+            1. Gladiator | 2024
+        </li>
+    </ul>
+
+    <script>
+        let movies = [
+            { name: "Gladiator", year: "2024" },
+            { name: "The Legend", year: "2020" },
+            { name: "Reacher", year: "2025"}
+        ]
+
+        const listMovie = document.querySelector('.listMovie');
+        const addBTN = document.querySelector('#addBTN');
+        const movieName = document.querySelector('#movieName');
+        const year = document.querySelector('#year');
+
+        renderMovies();
+        function renderMovies(){
+            listMovie.innerHTML = '';
+            for(let i=0; i<movies.length; i++){
+                listMovie.innerHTML += `
+                    <li>
+                        ${i+1}. ${movies[i].name} | ${movies[i].year}
+                    <button>Edit</button>
+                    <button>Delete</button>
+                    </li>
+                `;
+            }
+            movieName.value = '';
+            year.value = '';
+        }
+        
+
+        addBTN.addEventListener('click', ()=>{
+            let newMovie = { name: movieName.value, year: year.value}
+            movies.push(newMovie);
+
+            renderMovies();
+        })        
+    </script>
+</body>
+</html>

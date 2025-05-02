@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read from CRUD</title>
+</head>
+
+<body>
+    <table border="1" cellpadding="10" width="50%">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Payment</th>
+            </tr>
+        </thead>
+
+        <tbody id="listStudents">
+            <tr>
+                <td>Ensa</td>
+                <td>Shala</td>
+                <td>ensa@shala.com</td>
+                <td>30€</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <script src="data.js"></script>
+
+    <script>
+        const listStudents = document.querySelector('#listStudents');
+
+
+        generateList()
+        function generateList() {
+            listStudents.innerHTML = '';
+            for (let i = 0; i < students.length; i++) {
+                listStudents.innerHTML += `
+            <tr>
+                <td>${students[i].first_name}</td>
+                <td>${students[i].last_name}</td>
+                <td>${students[i].email}</td>
+                <td>${students[i].payment}</td>
+            </tr>
+        `
+            }
+        }
+        let newStudent = {
+            first_name: "Shkurte",
+            last_name: "Fejza",
+            email: "shkurte@fejza.com",
+            payment: "40€"
+        }
+
+        students.push(newStudent)
+        generateList();
+    </script>
+</body>
+
+</html>

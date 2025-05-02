@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mophy Admin Dashboard</title>
+    <link rel="stylesheet" href="my_wallet.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">MOPHY</div>
+            <nav>
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">My Wallet</a>
+                <a href="#">Transactions</a>
+                <a href="#">Invoices</a>
+                <a href="#">Cards</a>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header>
+                <input type="search" placeholder="Search here...">
+                <div class="user-info">
+                    <span class="weather">21° Medan, IDN</span>
+                    <span class="notifications">2</span>
+                    <span class="messages">3</span>
+                    <div class="user">
+                        <span>Hello, Franklin</span>
+                        <img src="user-avatar.jpg" alt="User Avatar">
+                    </div>
+                </div>
+            </header>
+            <section class="content">
+                <h1>My Wallet</h1>
+                <div class="wallet-card">
+                    <div class="balance">
+                        <span>Main Balance</span>
+                        <h2>$673,412.66</h2>
+                    </div>
+                    <div class="stats">
+                        <div class="stat">
+                            <span>24%</span>
+                            <span>Installment</span>
+                            <span>$5,412</span>
+                        </div>
+                        <!-- Add more stat divs as needed -->
+                    </div>
+                </div>
+                <h2>Payment History</h2>
+                <table class="payment-history">
+                    <thead>
+                        <tr>
+                            <th>ID Payment</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Card</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#00123521</td>
+                            <td>June 1, 2020, 08:22 AM</td>
+                            <td>+$5,553</td>
+                            <td>MasterCard 404</td>
+                            <td><span class="status completed">Completed</span></td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

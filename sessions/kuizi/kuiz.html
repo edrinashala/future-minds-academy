@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+      text-align: center;
+    }
+
+    .light-mode {
+      background-color: white;
+      color: black;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    h2, h3, p {
+      margin: 20px;
+    }
+  </style>
+</head>
+<body class="light-mode">
+ <button id="toggleButton">Movie</button>
+  <h2>Movies</h2>
+  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum impedit ducimus nostrum saepe pariatur facilis mollitia nulla odio quisquam eligendi quia commodi, tempora, ea, ipsam officiis harum possimus aut! Corporis?</p>
+  <h3>Year of movie</h3>
+  
+ 
+  <script>
+
+    const modes = ['light-mode', 'dark-mode'];
+
+    
+    const lightContent = [
+      "Movies", 
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum impedit ducimus nostrum saepe pariatur facilis mollitia nulla odio quisquam eligendi quia commodi, tempora, ea, ipsam officiis harum possimus aut! Corporis",
+      "Year of movie" 
+    ];
+
+    const darkContent = [
+      "Willy Wonka and the Chocolate Factory", 
+      "Willy Wonka and the chocolate factory:Charlie, a young boy from an impoverished family, and four other kids win a tour of an amazing chocolate factory run by an imaginative chocolatier, Willy Wonka, and his staff of Oompa-Loompa...", 
+      "Year of publishing: 2005" 
+    ];
+
+    const body = document.body;
+    const button = document.getElementById('toggleButton');
+    const h2 = document.querySelector('h2');
+    const p = document.querySelector('p');
+    const h3 = document.querySelector('h3');
+
+   
+    let currentMode = 0;
+
+    
+    function toggleMode() {
+    
+      body.classList.remove(modes[currentMode]);
+      
+      
+      currentMode = (currentMode + 1) % modes.length;
+
+      
+      body.classList.add(modes[currentMode]);
+
+      
+      if (currentMode === 0) {
+        h2.textContent = lightContent[0];
+        p.textContent = lightContent[1];
+        h3.textContent = lightContent[2];
+        button.textContent = 'Movie';
+      } else {
+        h2.textContent = darkContent[0];
+        p.textContent = darkContent[1];
+        h3.textContent = darkContent[2];
+        button.textContent = 'Movie';
+      }
+    }
+
+    button.addEventListener('click', toggleMode);
+  </script>
+</body>
+</html>

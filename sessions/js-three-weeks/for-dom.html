@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP3 Player</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .wrapper {
+            width: 700px;
+            background-color: rgb(229, 229, 229);
+            padding: 20px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .song {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 16pt;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>MP3 Player</h1>
+    <div class="wrapper">
+        <div class="song">
+            <h4>Smooth Criminal</h4>
+            <p>
+                <audio controls src="Michael Jackson - Smooth Criminal (Official Video).mp3"></audio>
+            </p>
+            <p>Length: 2mins</p>
+        </div>
+    </div>
+
+    <script>
+        const wrapper = document.querySelector('.wrapper');
+         for(let i=0; i<10; i++){
+
+         }
+
+        wrapper.innerHTML += `
+        <div class="song">
+            <h4>${i+1}. Smooth Criminal</h4>
+            <p>
+                <audio controls src="Michael Jackson - Smooth Criminal (Official Video).mp3"></audio>
+            </p>
+            <p>Length: 2mins</p>
+        </div>
+        `;
+    </script>
+</body>
+</html>

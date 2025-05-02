@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+            let students = [
+            {name: 'John', mosha: 17},
+            {name: 'Drilon', mosha: 15},
+            {name: 'Lum', mosha: 20},
+            {name: 'Allice', mosha: 18}
+        ]
+
+        function sortByName(array) {
+            return array.sort((a, b) => a.name.localCompare(b.name));
+        }
+        
+        function sortByAge(array){
+            return array.sort((a, b) => a.mosha - b.mosha)
+        }
+
+        console.log("Sort the students by name:")
+        let sortedName = [...students];
+        sortedName.forEach(student => console.log(student.name))
+
+        console.log("Sort the students by age:")
+        let sortedAge = [...students];
+        sortedName.forEach(student => console.log(student.mosha))
+</script>
+
+</body>
+</html>

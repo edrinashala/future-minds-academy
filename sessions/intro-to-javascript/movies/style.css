@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 img {
-    width: 95%;
+    width: 100%;
 }
 
 body {
@@ -42,8 +42,17 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
+    padding: 20px;
 
+}
+.movies li:hover{
+    background-color: gray;
+    cursor: pointer;
+}
+.activeMovie{
+    background-color: gray;
+    
+}
 .datetime {
     display: flex;
     justify-content: space-between;

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lights on and off</title>
+    <style>
+        button { 
+            background: transparent; 
+            border-radius: 10px; 
+            padding: 10px; 
+            cursor: pointer;
+        }
+        .wrapper {
+            margin-top: 20px;
+            background-color: antiquewhite;
+            padding: 20px;
+            border-radius: 20px;
+            width: 400px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            transition: 0.5s;
+        }
+        .active {
+            background-color: black;
+            color: white;
+            border-radius: 0px;
+        }
+        .activeBTN {
+            background-color: aliceblue;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    Lights: <button id="onBTN">On</button>
+    <div class="wrapper">
+        <h2>Welcome to Gjilani</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid maxime cum neque, dolorum qui quas amet facere placeat velit, illum perferendis consequuntur dicta iste, officiis magnam. Quaerat illo nesciunt ad.</p>
+        <button class="learnMore">Learn more</button>
+    </div>
+
+    <script>
+        const onBTN = document.querySelector('#onBTN');
+        const wrapper = document.querySelector('.wrapper');
+        const learnMore = document.querySelector('.learnMore');
+        let onOffStatus = false;
+
+        onBTN.addEventListener('click', ()=>{
+            if(!onOffStatus) {
+                wrapper.classList.add('active');
+                learnMore.classList.add('activeBTN');
+                onBTN.style.background = "black";
+                onBTN.style.color = "white";
+                onBTN.textContent = "Off";
+                onOffStatus = true;
+            }
+            else {
+                wrapper.classList.remove('active');
+                learnMore.classList.remove('activeBTN');
+                onBTN.style.background = "white";
+                onBTN.style.color = "black";
+                onBTN.textContent = "On";
+                onOffStatus = false;
+            }
+        });
+    </script>
+</body>
+</html>

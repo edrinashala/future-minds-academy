@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boring Calculator</title>
+</head>
+<body>
+    <script>
+        const firstInput = prompt('Write your first number:');
+        const firstNumber = parseFloat(firstInput);
+        const operation = prompt('What operation do you want to do (+, -, *, /, %):');
+        const secondInput = prompt('Write your second number:');
+        const secondNumber = parseFloat(secondInput);
+        let result;
+
+        if (isNaN(firstNumber) || isNaN(secondNumber)) {
+            alert('Please enter valid numbers!');
+            throw new Error('Invalid numeric input');
+        }
+
+        switch (operation) {
+            case "+":
+                result = firstNumber + secondNumber;
+                break;
+            case "-":
+                result = firstNumber - secondNumber;
+                break;
+            case "*":
+                result = firstNumber * secondNumber;
+                break;
+            case "/":
+                if (secondNumber === 0) {
+                    alert('Cannot divide by zero!');
+                    throw new Error('Division by zero');
+                }
+                result = firstNumber / secondNumber;
+                break;
+            case "%":
+                result = firstNumber % secondNumber;
+                break;
+            default:
+                alert('You have entered an invalid operation!');
+                throw new Error('Invalid operation');
+        }
+
+        const output = `${firstNumber} ${operation} ${secondNumber} = ${result}`;
+        console.log(output);
+        alert(output);
+    </script>
+</body>
+</html>
