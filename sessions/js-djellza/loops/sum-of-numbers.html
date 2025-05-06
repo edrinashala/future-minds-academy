@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let total = 0;
+
+        while (true) {
+            let input = prompt("Enter a positive number:");
+            let number = Number(input);
+
+            if (isNaN(number)) {
+                alert("Invalid input. Please enter a valid number.");
+                continue;
+            }
+
+            if (number < 0) {
+                alert("Only positive numbers are allowed. Try again.");
+                continue;
+            }
+
+            if (number === 0) {
+                break;
+            }
+
+            total += number;
+        }
+
+        alert("The sum of the numbers you wrote is equal to " + total + ".");
+
+
+        let number;
+        let sum=0;
+
+        while(number !== 0){
+            number = parseInt(prompt("Enter a number (0 to stop)"))
+        }
+    </script>
+
+</body>
+
+</html>

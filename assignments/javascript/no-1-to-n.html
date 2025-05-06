@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbers from 1 to n</title>
+</head>
+<body>
+    
+    <script>
+let number = parseInt(prompt("Enter a positive integer from 1 to 100:"));
+
+
+for (let i = 1; i <= number; i++) {
+  console.log(i);
+}
+
+
+let spaceSeparated = "";
+for (let i = 1; i <= number; i++) {
+  spaceSeparated += i + " ";
+}
+console.log(spaceSeparated.trim()); 
+
+
+let commaSeparated = "";
+for (let i = 1; i <= number; i++) {
+  commaSeparated += i;
+  if (i < number) {
+    commaSeparated += ", ";
+  }
+}
+console.log(commaSeparated);
+
+    </script>
+</body>
+</html>
